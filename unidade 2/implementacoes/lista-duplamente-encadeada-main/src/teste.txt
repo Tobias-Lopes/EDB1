@@ -1,0 +1,101 @@
+METODOS PROFESSOR
+
+método inserir (rebaixar o material){
+    if(i<1 || i>quantidade+1){
+        throw std::out_of_range("indice invalido");
+    }
+
+    if(i==1){
+        return inseririnicio();
+    } else if(i == quantidade){
+        return inserirfim(s)
+    } else{
+        auto aux = cabeca->proximo;
+        int posicao = 1;
+
+        while(posicao < i-1){
+            aux = aux->proximo
+            posicao++;
+        }
+
+        auto novo = new No(s);
+        novo->anterior = aux;
+        novo->proximo = aux->proximo;
+
+        novo->proximo->anterior = novo;
+        novo->anterior->proximo = novo;
+
+        quantidade++;
+        return true
+    }
+}
+
+metodo inserir ordenado(str)//DECRESCENTE{
+    auto aux = cabeca->proximo;
+
+    while(aux != cauda){
+        if(aux->valor == s){
+            return false;
+        } else if(aux->valor < s){
+            break;
+        } else {
+            aux = aux->proximo;
+        }
+
+        auto novo = new No(s);
+        novo->proximo = aux;
+        novo->anterior = aux->anterior;
+
+        novo->proximo->anterior = novo;
+        novo->anterior->proximo = novo;
+
+        quantidade++;
+        return true;
+    }
+}
+
+bool ehPalindromo(string str){
+    stack<char> pilha;
+
+    for(char c : str){
+        if(c == ' ') continue;
+        pilha.push(c);
+    }
+
+    for(char c : str){
+        if(c == ' ') continue;
+        if
+    }
+
+
+}
+
+int ListaEncadeada::removerTodos(int val) 
+{
+    No<int>* atual = getInicio();
+    No<int>* anterior = nullptr;
+    int qtd = 0;
+
+    while (atual) {
+        No<int>* proximo = atual->getProximo(); // salva o próximo antes de mexer
+
+        if (atual->getValor() == val) {
+            // Caso especial: removendo o primeiro nó
+            if (anterior == nullptr) {
+                setInicio(proximo);
+            } else {
+                anterior->setProximo(proximo);
+            }
+
+            delete atual;
+            qtd++;
+        } else {
+            anterior = atual; // só atualiza anterior se não removeu
+        }
+
+        atual = proximo; // avança para o próximo nó sempre
+    }
+
+    return qtd;
+
+}

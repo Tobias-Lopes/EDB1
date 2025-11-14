@@ -1,0 +1,190 @@
+make[1]: Entering directory '/mnt/c/Users/tobia/OneDrive/Documentos/Projects/edb1/unidade 2/2024_1/q1'
+g++ -Wall -Wextra  -pedantic -std=c++14 -Iheader -I../lib/catch2 -g -c src/ListaDuplamenteEncadeada.cpp -o src/ListaDuplamenteEncadeada.o
+src/ListaDuplamenteEncadeada.cpp: In constructor ‘ListaDuplamenteEncadeada::ListaDuplamenteEncadeada()’:
+src/ListaDuplamenteEncadeada.cpp:17:56: error: expected primary-expression before ‘...’ token
+   17 | ListaDuplamenteEncadeada::ListaDuplamenteEncadeada() { ... }
+      |                                                        ^~~
+src/ListaDuplamenteEncadeada.cpp: In destructor ‘ListaDuplamenteEncadeada::~ListaDuplamenteEncadeada()’:
+src/ListaDuplamenteEncadeada.cpp:25:57: error: expected primary-expression before ‘...’ token
+   25 | ListaDuplamenteEncadeada::~ListaDuplamenteEncadeada() { ... }
+      |                                                         ^~~
+src/ListaDuplamenteEncadeada.cpp: At global scope:
+src/ListaDuplamenteEncadeada.cpp:32:19: error: no declaration matches ‘const std::string ListaDuplamenteEncadeada::primeiroElemento() const’
+   32 | const std::string ListaDuplamenteEncadeada::primeiroElemento() const { ... }
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:32:19: note: no functions named ‘const std::string ListaDuplamenteEncadeada::primeiroElemento() const’
+In file included from src/ListaDuplamenteEncadeada.cpp:7:
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:39:19: error: no declaration matches ‘const std::string ListaDuplamenteEncadeada::ultimoElemento() const’
+   39 | const std::string ListaDuplamenteEncadeada::ultimoElemento() const { ... }
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:39:19: note: no functions named ‘const std::string ListaDuplamenteEncadeada::ultimoElemento() const’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:45:5: error: no declaration matches ‘int ListaDuplamenteEncadeada::tamanho() const’
+   45 | int ListaDuplamenteEncadeada::tamanho() const { ... }
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:46:9: note: candidate is: ‘int ListaDuplamenteEncadeada::tamanho()’
+   46 |     int tamanho(void);
+      |         ^~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:51:6: error: no declaration matches ‘bool ListaDuplamenteEncadeada::vazia() const’
+   51 | bool ListaDuplamenteEncadeada::vazia() const { ... }
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:45:10: note: candidate is: ‘bool ListaDuplamenteEncadeada::vazia()’
+   45 |     bool vazia(void);
+      |          ^~~~~
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:59:19: error: no declaration matches ‘const std::string ListaDuplamenteEncadeada::elementoNaPosicao(int) const’
+   59 | const std::string ListaDuplamenteEncadeada::elementoNaPosicao(int i) const { ... }
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:59:19: note: no functions named ‘const std::string ListaDuplamenteEncadeada::elementoNaPosicao(int) const’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:66:5: error: no declaration matches ‘int ListaDuplamenteEncadeada::buscar(std::string) const’
+   66 | int ListaDuplamenteEncadeada::buscar(std::string s) const { ... }
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:66:5: note: no functions named ‘int ListaDuplamenteEncadeada::buscar(std::string) const’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:73:6: error: no declaration matches ‘bool ListaDuplamenteEncadeada::inserirInicio(std::string)’
+   73 | bool ListaDuplamenteEncadeada::inserirInicio(std::string s) { ... }
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:73:6: note: no functions named ‘bool ListaDuplamenteEncadeada::inserirInicio(std::string)’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:80:6: error: no declaration matches ‘bool ListaDuplamenteEncadeada::inserirFim(std::string)’
+   80 | bool ListaDuplamenteEncadeada::inserirFim(std::string s) { ... }
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:80:6: note: no functions named ‘bool ListaDuplamenteEncadeada::inserirFim(std::string)’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:89:6: error: no declaration matches ‘bool ListaDuplamenteEncadeada::inserir(int, std::string)’
+   89 | bool ListaDuplamenteEncadeada::inserir(int i, std::string s) { ... }
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:89:6: note: no functions named ‘bool ListaDuplamenteEncadeada::inserir(int, std::string)’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:97:6: error: no declaration matches ‘bool ListaDuplamenteEncadeada::inserirAntes(std::string, std::string)’
+   97 | bool ListaDuplamenteEncadeada::inserirAntes(std::string novoElemento, std::string referencia) { ... }
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:97:6: note: no functions named ‘bool ListaDuplamenteEncadeada::inserirAntes(std::string, std::string)’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp: In member function ‘bool ListaDuplamenteEncadeada::inserirOrdenado(std::string)’:
+src/ListaDuplamenteEncadeada.cpp:105:30: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::proximo’ is private within this context
+  105 |     auto aux = this->cabeca->proximo;
+      |                              ^~~~~~~
+In file included from src/../header/ListaDuplamenteEncadeada.h:10:
+src/../header/No.h:16:9: note: declared private here
+   16 |     No* proximo;
+      |         ^~~~~~~
+src/ListaDuplamenteEncadeada.cpp:107:39: error: ‘std::__cxx11::basic_string<char> No<std::__cxx11::basic_string<char> >::valor’ is private within this context
+  107 |     while (aux != this->cauda && aux->valor > s)
+      |                                       ^~~~~
+src/../header/No.h:15:7: note: declared private here
+   15 |     T valor;
+      |       ^~~~~
+src/ListaDuplamenteEncadeada.cpp:109:20: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::proximo’ is private within this context
+  109 |         aux = aux->proximo;
+      |                    ^~~~~~~
+src/../header/No.h:16:9: note: declared private here
+   16 |     No* proximo;
+      |         ^~~~~~~
+src/ListaDuplamenteEncadeada.cpp:112:35: error: ‘std::__cxx11::basic_string<char> No<std::__cxx11::basic_string<char> >::valor’ is private within this context
+  112 |     if(aux != this->cauda && aux->valor == s){
+      |                                   ^~~~~
+src/../header/No.h:15:7: note: declared private here
+   15 |     T valor;
+      |       ^~~~~
+src/ListaDuplamenteEncadeada.cpp:118:11: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::proximo’ is private within this context
+  118 |     novo->proximo = aux;
+      |           ^~~~~~~
+src/../header/No.h:16:9: note: declared private here
+   16 |     No* proximo;
+      |         ^~~~~~~
+src/ListaDuplamenteEncadeada.cpp:119:11: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::anterior’ is private within this context
+  119 |     novo->anterior = aux->anterior;
+      |           ^~~~~~~~
+src/../header/No.h:17:9: note: declared private here
+   17 |     No* anterior;
+      |         ^~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:119:27: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::anterior’ is private within this context
+  119 |     novo->anterior = aux->anterior;
+      |                           ^~~~~~~~
+src/../header/No.h:17:9: note: declared private here
+   17 |     No* anterior;
+      |         ^~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:121:10: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::anterior’ is private within this context
+  121 |     aux->anterior->proximo = novo;
+      |          ^~~~~~~~
+src/../header/No.h:17:9: note: declared private here
+   17 |     No* anterior;
+      |         ^~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:121:20: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::proximo’ is private within this context
+  121 |     aux->anterior->proximo = novo;
+      |                    ^~~~~~~
+src/../header/No.h:16:9: note: declared private here
+   16 |     No* proximo;
+      |         ^~~~~~~
+src/ListaDuplamenteEncadeada.cpp:122:10: error: ‘No<std::__cxx11::basic_string<char> >* No<std::__cxx11::basic_string<char> >::anterior’ is private within this context
+  122 |     aux->anterior = novo;
+      |          ^~~~~~~~
+src/../header/No.h:17:9: note: declared private here
+   17 |     No* anterior;
+      |         ^~~~~~~~
+src/ListaDuplamenteEncadeada.cpp: At global scope:
+src/ListaDuplamenteEncadeada.cpp:134:13: error: no declaration matches ‘std::string ListaDuplamenteEncadeada::removerInicio()’
+  134 | std::string ListaDuplamenteEncadeada::removerInicio() { ... }
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:134:13: note: no functions named ‘std::string ListaDuplamenteEncadeada::removerInicio()’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:141:13: error: no declaration matches ‘std::string ListaDuplamenteEncadeada::removerFim()’
+  141 | std::string ListaDuplamenteEncadeada::removerFim() { ... }
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:141:13: note: no functions named ‘std::string ListaDuplamenteEncadeada::removerFim()’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:149:13: error: no declaration matches ‘std::string ListaDuplamenteEncadeada::remover(int)’
+  149 | std::string ListaDuplamenteEncadeada::remover(int i) { ... }
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:149:13: note: no functions named ‘std::string ListaDuplamenteEncadeada::remover(int)’
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:155:13: error: no declaration matches ‘std::string ListaDuplamenteEncadeada::imprimir() const’
+  155 | std::string ListaDuplamenteEncadeada::imprimir() const { ... }
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:43:17: note: candidate is: ‘std::string ListaDuplamenteEncadeada::imprimir()’
+   43 |     std::string imprimir(void);
+      |                 ^~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+src/ListaDuplamenteEncadeada.cpp:168:15: error: no declaration matches ‘StatusDaLista ListaDuplamenteEncadeada::checarConsistencia() const’
+  168 | StatusDaLista ListaDuplamenteEncadeada::checarConsistencia() const { ... }
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:40:19: note: candidate is: ‘StatusDaLista ListaDuplamenteEncadeada::checarConsistencia()’
+   40 |     StatusDaLista checarConsistencia(void);
+      |                   ^~~~~~~~~~~~~~~~~~
+src/../header/ListaDuplamenteEncadeada.h:25:7: note: ‘class ListaDuplamenteEncadeada’ defined here
+   25 | class ListaDuplamenteEncadeada {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [makefile:23: src/ListaDuplamenteEncadeada.o] Error 1
+make[1]: Leaving directory '/mnt/c/Users/tobia/OneDrive/Documentos/Projects/edb1/unidade 2/2024_1/q1'

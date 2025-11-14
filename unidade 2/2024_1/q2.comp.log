@@ -1,0 +1,9 @@
+make[1]: Entering directory '/mnt/c/Users/tobia/OneDrive/Documentos/Projects/edb1/unidade 2/2024_1/q2'
+g++ -Wall -Wextra  -pedantic -std=c++14 -Iheader -I../lib/catch2 -g -c src/ListaEncadeada.cpp -o src/ListaEncadeada.o
+src/ListaEncadeada.cpp: In member function ‘int ListaEncadeada::removerTodos(int)’:
+src/ListaEncadeada.cpp:25:38: warning: unused parameter ‘val’ [-Wunused-parameter]
+   25 | int ListaEncadeada::removerTodos(int val)
+      |                                  ~~~~^~~
+g++ -Wall -Wextra  -pedantic -std=c++14 -Iheader -I../lib/catch2 -g -c test/teste.cpp -o test/teste.o
+g++ -Wall -Wextra  -pedantic -std=c++14 -Iheader -I../lib/catch2 -g -c ../lib/catch2/catch_amalgamated.cpp -o ../lib/catch2/catch_amalgamated.o
+make[1]: *** [makefile:23: ../lib/catch2/catch_amalgamated.o] Interrupt

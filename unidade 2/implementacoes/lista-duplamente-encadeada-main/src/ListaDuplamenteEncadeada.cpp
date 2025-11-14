@@ -291,10 +291,6 @@ bool ListaDuplamenteEncadeada::inserirAntes(std::string novoElemento, std::strin
  */
 bool ListaDuplamenteEncadeada::inserirOrdenado(std::string s) {
 
-    if(this->vazia()){
-        return this->inserirInicio(s);
-    }
-
     auto aux = this->cabeca->proximo;
 
     while (aux != this->cauda && aux->valor > s) //ordem decrescente
@@ -305,10 +301,6 @@ bool ListaDuplamenteEncadeada::inserirOrdenado(std::string s) {
     if (aux != this->cauda && aux->valor == s)
     {
         return false;
-    }
-
-    if (aux == this->cauda) {
-        return this->inserirFim(s);
     }
     
     auto novo = new No<std::string>(s);
