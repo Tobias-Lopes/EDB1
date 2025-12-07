@@ -18,7 +18,7 @@ public:
 
 	~Dicionario()
 	{
-		delete[] pares;
+		delete[] pares; 
 	}
 
 	bool inserir(const K& chave, const V& valor)
